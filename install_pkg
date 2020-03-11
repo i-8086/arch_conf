@@ -1,0 +1,2 @@
+#!/bin/bash
+pacman -S alsa-utils networkmanager network-manager-applet nitrogen baobab bash-completion code docker docker-compose dunst firefox htop mlocate neofetch picom ranger rxvt-unicode sxiv volumeicon xterm zatura htop pcmanfm
