@@ -1,0 +1,6 @@
+2020/03/11-09:59:08.219 c5e0 Reusing MANIFEST /home/filip/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2020/03/11-09:59:08.219 c5e0 Recovering log #3
+2020/03/11-09:59:08.220 c5e0 Reusing old log /home/filip/.config/chromium/Default/Local Storage/leveldb/000003.log 
+2020/03/11-10:30:33.985 c93c Level-0 table #5: started
+2020/03/11-10:30:33.997 c93c Level-0 table #5: 67315 bytes OK
+2020/03/11-10:30:34.009 c93c Delete type=0 #3

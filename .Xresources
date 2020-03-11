@@ -1,0 +1,66 @@
+xterm*faceName: Monospace
+xterm*faceSize: 10
+
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+
+! special
+*.foreground:   #d0d0d0
+*.background:   #000000
+*.cursorColor:  #d0d0d0
+
+! black
+*.color0:       #000000
+*.color8:       #808080
+
+! red
+*.color1:       #ff0000
+*.color9:       #ff0000
+
+! green
+*.color2:       #33ff00
+*.color10:      #33ff00
+
+! yellow
+*.color3:       #ff0099
+*.color11:      #ff0099
+
+! blue
+*.color4:       #0066ff
+*.color12:      #0066ff
+
+! magenta
+*.color5:       #cc00ff
+*.color13:      #cc00ff
+
+! cyan
+*.color6:       #00ffff
+*.color14:      #00ffff
+
+! white
+*.color7:       #d0d0d0
+*.color15:      #ffffff
+
+!! URxvt Appearance
+URxvt.font: xft:bitstream vera sans mono:size=10:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=10:antialias=true
+!!URxvt.italicFont: -*-rissole-*
+!!URxvt.boldItalicfont: -*-rissole-*
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755_52: false
+
