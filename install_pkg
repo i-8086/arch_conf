@@ -1,6 +1,6 @@
 #!/bin/bash
 cd $HOME \
-&& sudo pacman -S \
+&& sudo pacman --noconfirm -S \
  xorg \
  xorg-server \
  xorg-xinit \
@@ -31,6 +31,7 @@ cd $HOME \
  zathura \
  pcmanfm \
  noto-fonts \
+ ttf-bitstream-vera \
  ttf-droid \
  ttf-liberation \
  postgresql \
@@ -44,7 +45,7 @@ cd $HOME \
 && git clone https://aur.archlinux.org/yay.git \
 && cd yay \
 && makepkg -si \
-&& yay -S google-chrome \
+&& yay --answerdiff=None --noconfirm -S google-chrome \
  rxvt-unicode-pixbuf \
  urxvt-perls \
  visual-studio-code-bin \
