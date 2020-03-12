@@ -103,7 +103,7 @@ create hostname file in /etc dir
 
 ## Install grub
 
-`pacman -S grub`
+`pacman -S grub os-prober`
 
 `grub-install /dev/sda`
 
@@ -117,7 +117,11 @@ uncomment wheel group from sudoers file (wheel ALL=(ALL) ALL)
 
 add user
 
-`sudo useradd -m <user_name> -p <password>`
+`sudo useradd -m <user_name>`
+
+set user passwd
+
+`passwd <user_name>`
 
 add user to wheel, audio, video group
 
