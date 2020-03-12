@@ -66,5 +66,6 @@ cd $HOME \
 && sudo systemctl --now enable neofetch_service.service \
 && mkdir ~/Pictures \
 && cp -R scripts $HOME/ \
+&& chmod +x $HOME/scripts/* \
 && cp ws_Red_Autumn_1920x1080.jpg.c764983446194cba679411df337085b9.jpg ~/Pictures
 
