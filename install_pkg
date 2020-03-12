@@ -1,6 +1,6 @@
 #!/bin/bash
 cd $HOME \
-sudo pacman -S \
+&& sudo pacman -S \
  xorg \
  xorg-server \
  xorg-xinit \
