@@ -1,0 +1,63 @@
+#!/bin/bash
+sudo pacman -S \
+ xorg-xinit \
+ xorg-xbacklight \
+ xorg-xprop \
+ alsa-utils \
+ volumeicon \
+ dmenu \
+ xterm \
+ htop \
+ slock \
+ #rxvt-unicode \
+ network-manager-applet \
+ bash-completion \
+ picom \
+ dunst \
+ ranger \
+ sxiv \
+ scrot \
+ nitrogen \
+ arandr \
+ firefox \
+ baobab \
+ code \
+ docker \
+ docker-compose \
+ mlocate \
+ neofetch \
+ zathura \
+ pcmanfm \
+ noto-fonts \
+ ttf-droid \
+ ttf-liberation \
+ postgresql \
+ nginx \
+ php-fpm \
+ phppgadmin \
+&& sudo -u postgres -i initdb --locale $LANG -E UTF8 -D /var/lib/postgres/data \
+&& sudo systemctl enable postgresql \
+&& sudo systemctl enable nginx \
+&& sudo systemctl enable php-fpm \
+&& git clone https://aur.archlinux.org/yay.git \
+&& cd yay \
+&& makepkg -si \
+&& yay -S google-chrome \
+ rxvt-unicode-pixbuf \
+ urxvt-perls \
+ visual-studio-code-bin \
+ mongodb-bin \
+ mongodb-compass \
+&& sudo systemctl enable mongodb 
+&& cd .. \
+&& sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bkp \
+&& sudo cp server/nginx.conf /etc/nginx/ \
+&& sudo cp /etc/php/php.ini /etc/php/php.ini.bkp \
+&& sudo cp server/php.ini /etc/php/php.ini \
+&& sudo ln -s /usr/share/webapps/phppgadmin /usr/share/nginx/html \
+&& cp -r home/. ~/ \
+&& sudo cp neofetch_service.service /etc/systemd/system/ \
+&& sudo systemctl --now enable neofetch_service.service \
+&& mkdir ~/Pictures \
+&& cp ws_Red_Autumn_1920x1080.jpg.c764983446194cba679411df337085b9.jpg ~/Pictures
+
