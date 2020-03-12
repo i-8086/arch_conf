@@ -41,6 +41,7 @@ cd $HOME \
  openssh \
  phppgadmin \
 && sudo -u postgres -i initdb --locale $LANG -E UTF8 -D /var/lib/postgres/data \
+&& sudo systemctl enable sshd \
 && sudo systemctl enable postgresql \
 && sudo systemctl enable nginx \
 && sudo systemctl enable php-fpm \
