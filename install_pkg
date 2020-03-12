@@ -64,5 +64,6 @@ cd $HOME \
 && sudo cp neofetch_service.service /etc/systemd/system/ \
 && sudo systemctl --now enable neofetch_service.service \
 && mkdir ~/Pictures \
+&& cp -R scripts $HOME/ \
 && cp ws_Red_Autumn_1920x1080.jpg.c764983446194cba679411df337085b9.jpg ~/Pictures
 
