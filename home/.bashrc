@@ -2,6 +2,7 @@
 # ~/.bashrc
 #
 export TERMINAL='urxvt'
+export PATH="$HOME/scripts:$PATH"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
