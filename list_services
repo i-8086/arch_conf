@@ -1,3 +1,0 @@
-#!/bin/bash
-
-systemctl list-units -t service --no-pager --no-legend | grep active
