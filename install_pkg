@@ -51,7 +51,7 @@ cd $HOME \
  visual-studio-code-bin \
  mongodb-bin \
  mongodb-compass \
-&& yay --answerdiff=None --noconfirm urxvt-perls \
+&& yay --answerdiff=None urxvt-perls \
 && sudo systemctl enable mongodb \
 && cd $HOME/arch_conf \
 && sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bkp \
