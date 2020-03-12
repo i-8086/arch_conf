@@ -1,4 +1,5 @@
 #!/bin/bash
+cd $HOME \
 sudo pacman -S \
  xorg \
  xorg-server \
