@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo systemctl start apache2
+sudo systemctl start postgresql
+sudo systemctl start mongod
+#sudo systemctl start mysql
+

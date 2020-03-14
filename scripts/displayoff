@@ -1,0 +1,12 @@
+#!/bin/bash
+sleep 1 && xset dpms force off && sleep 15
+
+while [ 1 ]
+do
+	TEST=$(xset -q | grep -c 'Monitor is On')
+	if [ $TEST -eq 1 ]; then
+		xset -dpms
+		exit 0
+	fi
+	sleep 5
+done

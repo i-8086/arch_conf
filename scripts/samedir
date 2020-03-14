@@ -1,0 +1,4 @@
+#!/bin/bash
+WHEREAMI=$(cat /tmp/whereami)
+WHEREAMI="cd ${WHEREAMI}"
+xterm -e "$WHEREAMI; bash"
