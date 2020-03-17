@@ -31,6 +31,8 @@ cd $HOME \
  noto-fonts \
  ttf-bitstream-vera \
  ttf-droid \
+ ttf-linux-libertine \
+ ttf-inconsolata \
  ttf-liberation \
  man \
  openssh \
