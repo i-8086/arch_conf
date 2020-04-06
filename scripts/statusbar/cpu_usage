@@ -1,0 +1,3 @@
+#!/bin/sh
+sar 1 1 | grep "Average" | awk '{print $3}'
+

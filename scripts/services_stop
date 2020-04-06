@@ -2,5 +2,7 @@
 sudo systemctl stop apache2
 sudo systemctl stop postgresql
 sudo systemctl stop mongod
+sudo systemctl stop docker
+sudo systemctl stop containerd
 sudo systemctl stop mysql
 
