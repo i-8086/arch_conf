@@ -35,6 +35,8 @@ cd $HOME \
  ttf-liberation \
  man \
  openssh \
+ python-pip \
+&& sudo pip3 install ueberzug \
 && sudo systemctl enable sshd \
 && git clone https://aur.archlinux.org/yay.git \
 && cd yay \
