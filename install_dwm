@@ -44,6 +44,7 @@ cd $HOME \
 && yay --answerdiff=None --noconfirm -S google-chrome \
  rxvt-unicode-pixbuf \
 && yay urxvt-perls \
+&& echo "set enable-keypad on" >> $HOME/.inputrc \
 && cd $HOME/arch_conf \
 && cp -r home/. ~/ \
 && sudo cp neofetch_service.service /etc/systemd/system/ \
