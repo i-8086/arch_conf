@@ -39,7 +39,7 @@ select mirror
 
 `reflector -c "Bulgaria" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist`
 
-`reflector --verbose -l 200 -n 20 -p http --sort rate --save /etc/pacman.d/mirrorlist'
+`reflector --verbose -l 200 -n 20 -p http --sort rate --save /etc/pacman.d/mirrorlist`
 
 
 ## Install Arch
