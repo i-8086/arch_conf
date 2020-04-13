@@ -1,0 +1,6 @@
+sudo pacman -Sy openbox \
+ obconf \
+ tint2 \
+ lxappearance-obconf \
+ gtk2-perl
+yay -Sy obmenu-generator
