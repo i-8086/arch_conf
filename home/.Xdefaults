@@ -1,0 +1,82 @@
+xterm*faceName: Monospace
+xterm*faceSize: 10
+
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+*.font:	bitstream vera sans mono:size=9:antialias=true
+!*.font: Inconsolata:size=11:antialias=true
+URxvt*termName: rxvt-unicode-256color
+URxvt.perl-ext-common: selection-to-clipboard,default,matcher
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.url-launcher: google-chrome-stable
+URxvt.matcher.button: C-1
+
+dwm.normbordercolor:	#0F111A
+dwm.normbgcolor:	#0F111A
+dwm.normfgcolor:	#FDFDFD
+dwm.selbordercolor:	#C574DD
+dwm.selbgcolor:		#C574DD
+dwm.selfgcolor:		#0F111A
+dwm.normflcolor:	#FDFDFD
+dwm.selflcolor:		#3FDCEE
+
+*.background:   #0F111A
+*.foreground:   #FDFDFD
+*.cursorColor:	#FDFDFD
+
+! black
+*.color0:       #282A36 
+*.color8:       #414458 
+
+! red
+*.color1:       #F37F97
+*.color9:       #FF4971
+
+! green
+*.color2:       #5ADECD
+*.color10:      #18E3C8
+
+! yellow
+*.color3:       #F2A272
+*.color11:      #FF8037
+
+! blue
+*.color4:       #8897F4
+*.color12:      #556FFF
+
+! magenta
+*.color5:       #C574DD
+*.color13:      #B043D1
+
+! cyan
+*.color6:       #79E6F3
+*.color14:      #3FDCEE
+
+! white
+*.color7:       #FDFDFD
+*.color15:	#FDFDFD
+!*.color15:      #BEBEC1
+
+!! URxvt Appearance
+URxvt.font: xft:bitstream vera sans mono:size=9:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=9:antialias=true
+!!URxvt.italicFont: -*-rissole-*
+!!URxvt.boldItalicfont: -*-rissole-*
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 5
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 999999
+URxvt.saveLines: 900000
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+URxvt.intensityStyles: true
