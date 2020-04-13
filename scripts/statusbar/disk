@@ -1,4 +1,0 @@
-#!/bin/sh
-
-df -h | awk ' /dev\/sd/ {print $3 "/" $2}'
-

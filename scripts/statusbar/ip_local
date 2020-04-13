@@ -1,3 +1,0 @@
-#!/bin/sh
-ip a | grep 'en\|wl' | grep inet | grep -v inet6 | cut -d \/ -f1 | sed 's/[^0-9\.]*//g'
-
